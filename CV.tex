@@ -1,0 +1,113 @@
+\documentclass[10.5pt,a4paper]{article}
+
+\usepackage[margin=0.75in,top=0.65in,bottom=0.65in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+
+\setlist{topsep=0pt, partopsep=0pt, parsep=0pt, itemsep=0.35em}
+
+\definecolor{accent}{HTML}{2A5C8A}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=accent,
+    linkcolor=accent
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0em}{}
+  [{\color{accent}\titlerule[0.8pt]}]
+\titlespacing{\section}{0pt}{1.2em}{0.45em}
+
+\newcommand{\entry}[4]{%
+  \noindent\textbf{#1}\hfill\textit{#3}\\[2pt]
+  \textit{#2}%
+  \def\tmp{#4}\ifx\tmp\empty\else\\[3pt]#4\fi
+}
+
+\newcommand{\headerlink}[2]{\href{#1}{\small #2}}
+
+\begin{document}
+
+%---------- HEADER ----------
+\begin{center}
+    {\Huge \bfseries Dheeraj Vittal Shenoy}\\[0.5em]
+    \small
+    \faEnvelope\ \href{mailto:dheerajshenoy22@gmail.com}{dheerajshenoy22@gmail.com} \quad
+    \faGlobe\ \href{https://dheerajshenoy.github.io}{dheerajshenoy.github.io}\\[0.3em]
+    \faLinkedin\ \href{https://linkedin.com/in/dheeraj-vittal-shenoy}{dheeraj-vittal-shenoy} \quad
+    \faGithub\ \href{https://github.com/dheerajshenoy}{dheerajshenoy}
+\end{center}
+
+%---------- EDUCATION ----------
+\section*{Education}
+
+\entry{Ph.D. in Science \& Technology}{Universidad de Cantabria}{Sep 2025 -- Present}{
+    Supervisors: Marcos Cruz-Rodr\'iguez, Enrique Mart\'inez-Gonz\'alez
+}
+
+\vspace{0.6em}
+\entry{M.Sc. in Physics (Astronomy \& Astrophysics)}{Jain University -- School of Sciences}{Sep 2022 -- Apr 2024}{
+    CGPA: 9.45/10 (2nd Rank)\\
+    Supervisors: Dr. Tanmoy Samanta, Sundar M.\,N.
+}
+
+\vspace{0.6em}
+\entry{B.Sc. in Physics, Mathematics, Computer Science}{Canara College}{Jun 2019 -- Aug 2022}{
+    CGPA: 9.51/10
+}
+
+%---------- RESEARCH EXPERIENCE ----------
+\section*{Research Experience}
+
+\entry{Research Intern}{Indian Institute of Astrophysics, Bangalore}{May 2024 -- Nov 2024}{
+    Sun-as-a-star DEM analysis of coronal dimmings associated with coronal mass ejections (CMEs).
+}
+
+\vspace{0.6em}
+\entry{Master's Thesis: \textit{Investigating Temperature Variations of the Solar Corona during CMEs}}{Indian Institute of Astrophysics}{2024}{}
+
+%---------- CONFERENCES & PRESENTATIONS ----------
+\section*{Conferences \& Presentations}
+
+\begin{itemize}[leftmargin=1.2em]
+    \item \textbf{National Space Science Symposium (NSSS)}, Goa University -- Poster: \textit{Crop Health Management in Millets using Satellite Imagery and Neural Networks}, Feb--Mar 2024
+    \item \textbf{MiliCon -- International Millets Conference}, Jain University -- Poster: \textit{Could AI/ML help lower yield loss in millets?} (\textit{Best Poster Award}) -- Sep 2023
+\end{itemize}
+
+%---------- HONORS & AWARDS ----------
+\section*{Honors \& Awards}
+
+\begin{itemize}[leftmargin=1.2em]
+    \item Outstanding Academic Performance -- 2nd Rank, M.Sc., Jain University -- School of Sciences (2024)
+    \item Best Outgoing Student, M.Sc., Jain University -- School of Sciences (2024)
+\end{itemize}
+
+%---------- TECHNICAL SKILLS ----------
+\section*{Technical Skills}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+    \textbf{Programming} & C, C++, Python \\[0.3em]
+    \textbf{OS} & Linux, Windows \\[0.3em]
+    \textbf{Tools} & Git, Emacs, Neovim, tmux \\[0.3em]
+    \textbf{Languages} & English (\textbf{C1}), Hindi, Kannada, Tulu, Konkani (native)
+\end{tabularx}
+
+%---------- PROJECTS ----------
+\section*{Projects}
+
+\begin{itemize}[leftmargin=1.2em]
+    \item \textbf{LEKTRA} -- High-performance document and image viewer that prioritizes screen space and control
+    \item \textbf{SonifyCPP} -- Converts images into audio signals
+\end{itemize}
+
+\end{document}
